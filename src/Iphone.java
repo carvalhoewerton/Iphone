@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class Iphone implements ReprodutorMusical, NavegadorInternet, AparelhoTelefonico{
+    public static void main(String[] args) throws Exception {
+            Iphone iphone = new Iphone();
+
+        
+       
+
+}
+
+        public void selecionarMusica(){
+            Scanner scanner = new Scanner(System.in);
+            String musica = scanner.nextLine();
+            System.out.println("Tocando a musica: " + musica);
+        }
+        public void tocar(){
+            System.out.print("A musica está sendo reproduzida!");
+
+
+        }
+        public void pausar(){
+            System.out.println("A musica pausou!");
+
+        }
+        public void exibirPagina(){
+            Scanner scanner = new Scanner(System.in);
+            String url = scanner.nextLine();
+            System.out.println("Exibindo a página...\n" + url);
+
+
+
+        }
+        public void adicionarNovaAba(){
+            System.out.println("Nova aba em branco criad!");
+
+
+        }
+        public void atualizarPagina(){
+            System.out.println("Página atualizada");
+
+}
+        public void ligar(){
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Digite o numero");
+            String numero = scanner.nextLine();
+            System.out.println("Ligando...");
+        }
+        public void atender(){
+            System.out.println("Pressione o botão verde para antender a ligacao!");
+        }
+        public void iniciarCorreioVoz(){
+            System.out.println("Deseja iniciar um correio de voz?");
+
+        }
+}
