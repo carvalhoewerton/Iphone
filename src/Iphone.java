@@ -57,7 +57,7 @@ public class Iphone implements ReprodutorMusical, NavegadorInternet, AparelhoTel
             Scanner scanner = new Scanner(System.in);
             System.out.println("Digite o numero");
             String numero = scanner.nextLine();
-            System.out.println("Ligando...");
+            System.out.println("Ligando para " + numero);
         }
         public void atender(){
             System.out.println("Pressione o botão verde para antender a ligacao!");
