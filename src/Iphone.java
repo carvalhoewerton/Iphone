@@ -4,14 +4,27 @@ public class Iphone implements ReprodutorMusical, NavegadorInternet, AparelhoTel
     public static void main(String[] args) throws Exception {
             Iphone iphone = new Iphone();
 
-        
+            System.out.println("Funcoes do reprodutor: selecionar musica, tocar e pausar");
+            iphone.selecionarMusica("Cocteau Twins - Heaven or Las Vegas");
+            iphone.tocar();
+            iphone.pausar();
+
+            System.out.println("Funcoes do aparelho telefonico:");
+            iphone.ligar();
+            iphone.atender(); 
+            iphone.iniciarCorreioVoz();
+
+            System.out.println("Funcoes do navegador: ");
+            iphone.exibirPagina();
+            iphone.adicionarNovaAba(); 
+            iphone.atualizarPagina();
+
        
 
 }
 
-        public void selecionarMusica(){
-            Scanner scanner = new Scanner(System.in);
-            String musica = scanner.nextLine();
+        public void selecionarMusica(String musica){
+            
             System.out.println("Tocando a musica: " + musica);
         }
         public void tocar(){
