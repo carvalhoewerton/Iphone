@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Iphone implements ReprodutorMusical, NavegadorInternet, AparelhoTelefonico{
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
             Iphone iphone = new Iphone();
 
             System.out.println("Funcoes do reprodutor: selecionar musica, tocar e pausar");
